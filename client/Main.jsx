@@ -5,7 +5,7 @@ import Landing from './components/landing/landing.jsx';
 import GamesView from './components/gamesList/GamesView.jsx';
 import { Route, Redirect } from 'react-router';
 import { BrowserRouter, Link, Switch } from 'react-router-dom'
-import LeaderBoard from './components/leaderboard/Leaderboard.jsx';
+import LeaderBoard from './components/leaderboard/LeaderBoard.jsx';
 import Profile from './components/profile/Profile.jsx';
 import NavBar from './components/navbar/NavBar.jsx';
 import PublicProfile from './components/profile/PublicProfile.jsx';
