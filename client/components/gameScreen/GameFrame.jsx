@@ -98,11 +98,11 @@ class GameFrame extends React.Component {
   }
 
   // Check if user is changing
-  componentWillUpdate(nextProps, nextState) {
-    if (nextProps.user.points === this.props.user.points) {
-      nextState = this.state;
-    }
-  }
+  // componentWillUpdate(nextProps, nextState) {
+  //   if (nextProps.user.points === this.props.user.points) {
+  //     nextState = this.state;
+  //   }
+  // }
 
   render() {
     return (this.state.testSuite === null || this.state.prompt === null || this.state.seedCode === null || this.state.algorithm === null) ? 

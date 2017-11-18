@@ -43,6 +43,15 @@ class GamesView extends React.Component {
     });
   };
 
+  componentWillReceiveProps(nextProps) {
+    console.log(nextProps);
+    let games = this.state.games.map((game) => {
+      game.completed = nextProps.user.gameHistory.includes(game.name);
+      return game;
+    });
+    this.setState({ games });
+  }
+
   onGameSelect(idx) {
     this.setState({
       selectedGame: this.state.games[idx]
