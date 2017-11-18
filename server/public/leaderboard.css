@@ -9,7 +9,7 @@
   grid-row: auto;
   margin: 50px 0 10px 0;
   padding: 15px;
-  border: solid rgb(42, 122, 246) 1px;
+  background-color: rgb(68, 72, 69)
 }
 
 .wrapper > h6 {
@@ -29,10 +29,10 @@
   grid-row: auto;
   margin: 10px 0 10px 0;
   padding: 15px;
-  background-color: rgba(94, 94, 140, 0.5);
+  background-color:  #19a085;;
 }
 .innerwrapper:hover {
-  background-color: rgb(56, 69, 89);
+  background-color: #2cdbb8;;
 }
 
 .profile_picture {
