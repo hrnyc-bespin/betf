@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./server/data/test.js",
     "react-dev": "webpack -d --watch",
-    "start": "webpack; node ./server/server.js"
+    "start": "webpack; node ./server/server.js",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "author": "",
   "license": "ISC",
