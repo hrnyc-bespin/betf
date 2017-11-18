@@ -78,11 +78,12 @@ exports.getSubmissionEvaluation = (req, res) => {
       var failing = regFailing ? data[regFailing.index - 2] : '0';
       failing = Number(data[regFailing.index - 3]) ? data[regFailing.index - 3] + failing : failing;
 
+      // console.log(error);
       // Create object to return back for the post request
       var returnObj = {
         passing: passing, 
         failing: failing,
-        testResults: data || error // This is a printout from mocha with the details of the passing and failing tests
+        testResults: data || error.toString() // This is a printout from mocha with the details of the passing and failing tests
       }; 
 
       res.send(returnObj);

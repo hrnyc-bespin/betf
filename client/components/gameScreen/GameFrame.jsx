@@ -58,6 +58,7 @@ class GameFrame extends React.Component {
       algo: this.props.gameObject.algorithmID
     })
     .then((response) => {
+      console.log(response.data);
       newState.result = response.data;
       if (!timerExpired && Number(newState.result.failing) !== 0) {
         this.setState(newState);
@@ -80,11 +81,11 @@ class GameFrame extends React.Component {
       return axios.put('/gamehistory', { params: { username: this.props.user.username, gamename: this.props.gameObject.name } });
     })
     .then((response) => {
+      console.log(response.data);
       let callback = () => this.props.setUser(response.data);
       response === false ? this.setState(newState) : this.setState(newState, callback);
     })
     .catch((error) => {
-      console.log(error);
       this.setState({
         result: { testResults: 'Unable to parse code' },
         timerExpired: timerExpired
