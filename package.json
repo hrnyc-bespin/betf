@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./server/data/test.js",
     "react-dev": "webpack -d --watch",
-    "start": "node ./server/server.js"
+    "start": "webpack; node ./server/server.js"
   },
   "author": "",
   "license": "ISC",
