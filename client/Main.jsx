@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import Landing from './components/landing/Landing.jsx';
+import Landing from './components/landing/landing.jsx';
 import GamesView from './components/gamesList/GamesView.jsx';
 import { Route, Redirect } from 'react-router';
 import { BrowserRouter, Link, Switch } from 'react-router-dom'
