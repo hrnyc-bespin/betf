@@ -168,7 +168,7 @@ nav .brand-logo {
 }
 #search {
   color: #fff;
-  background-color: rgb(136,136,136);
+  background-color: rgb(87, 87, 87);
 }
 #search_close {
   margin-top: 8px;
@@ -189,11 +189,11 @@ nav .brand-logo {
   }
 }
 /* COLORS */
-a{
+a {
   color: #fff
 }
 body {
-  background-color: rgb(136,136,136);
+  background-color: rgb(87, 87, 87);
   color: #fff;
 }
 .game_title {
