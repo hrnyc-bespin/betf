@@ -1,23 +1,44 @@
-var nthFibonacci = require('./submission.js')
+var bubbleSort = require('./submission.js')
 var chai = require('chai'); 
 var mocha = require('mocha');
 var should = chai.should();
-describe('nthFibonacci', function() {
-  it('should exist', function(){
-    should.exist(nthFibonacci);
+var assert = chai.assert;
+
+//
+// sort this array
+//
+describe('bubbleSort', function(){
+  
+  it(': sort it', function() {
+    Array.prototype.sort = null;
+    var input = [20, -10, -10, 2, 4, 299];
+    var expected = [-10, -10, 2, 4, 20, 299].toString();
+    var actual = bubbleSort(input).toString();
+    actual.should.equal(expected);
   });
-  it('should return integers', function(){
-    var result = nthFibonacci(0);
-    should.exist(result);
-    should.exist(Number(result));
+      
+//
+// and this array
+//
+
+  it(': sort it', function() {
+    Array.prototype.sort = null;
+    var input = [2, 2, 2, 2, 2, 22, 2, 2, 222, 2222, 22, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 22];
+    var expected = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 22, 22, 22, 222, 2222].toString();
+    var actual = bubbleSort(input).toString();
+    actual.should.equal(expected);
   });
-  it('should handle the base cases with ease', function(){
-    nthFibonacci(0).should.equal(0);
-    nthFibonacci(1).should.equal(1);
-  });
-  it('should return the nth Fibonacci number for a given n', function(){
-    nthFibonacci(5).should.equal(5);
-    nthFibonacci(10).should.equal(55);
-    nthFibonacci(20).should.equal(6765);
-  });
+
+
+//
+// also this array, thank you
+//    
+  it(': sort it', function() {
+    Array.prototype.sort = null;
+    var input = [18, 30, 25, 28, 24, 19, 31, 20, 35, 24, 36, 26, 30, 29, 40, 36];
+    var expected = [18, 19, 20, 24, 24, 25, 26, 28, 29, 30, 30, 31, 35, 36, 36, 40].toString();
+    var actual = bubbleSort(input).toString();
+    actual.should.equal(expected);});
+
+
 });

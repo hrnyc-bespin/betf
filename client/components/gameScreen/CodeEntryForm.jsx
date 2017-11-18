@@ -38,9 +38,11 @@ class CodeEntryForm extends React.Component {
         <div className="z-depth-4">
           <AceEditor
             mode="javascript"
-            theme="monokai"
+            theme="github"
             readOnly={this.props.timerExpired}
             onChange={this.onChange}
+            showPrintMargin={false}
+            fontSize={18}
             value={this.props.value}
             style={{ width: '100%', height: '400px' }}
             ref={(ref) => { this.ace = ref; }} // Let's put things into scope

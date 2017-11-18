@@ -7,9 +7,9 @@ import React from 'react';
 
 const Prompt = (props) => (
   <div>
-    <blockquote>
+    <h1>
       <h3>{props.name}</h3>
-    </blockquote>
+    </h1>
     <div>{props.promptDetails}</div>
   </div>
 );

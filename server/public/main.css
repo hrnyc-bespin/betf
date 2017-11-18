@@ -185,16 +185,27 @@ nav .brand-logo {
 }
 
 /* COLORS */
+a{
+  color: #fff
+}
 body {
-  background-color: rgb(48, 51, 49);
+  background-color: rgb(136,136,136);
   color: #fff;
 }
 .game_title {
   background-color: rgb(68, 72, 69);
 }
+
+.game_list {
+  background-color:  #19a085;;
+}
+.game_list:hover {
+  background-color: #2cdbb8;;
+}
+
 .nav {
-  background-color: rgb(32, 93, 186);
+  background-color: rgb(24, 150, 122);
 }
 #userinfo {
-  background-color: rgb(48, 69, 80);
+  background-color: rgb(68, 72, 69);
 }
