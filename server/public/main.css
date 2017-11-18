@@ -134,7 +134,7 @@ nav .brand-logo {
   }
 }
 .profile_public {
-  padding: 64px;
+  padding: 64px 64px 0 64px;
   display: flex;
   flex-flow: row;
   width: 100vw;
@@ -151,6 +151,11 @@ nav .brand-logo {
   padding-top: 4px;
   flex-flow: column wrap;
 }
+.profile_public_games {
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 20px;
+}
 @media only screen and (max-width: 992px) {
   .profile_public {
     flex-flow: column;
@@ -161,9 +166,9 @@ nav .brand-logo {
     align-items: center;
   }
 }
-#search_icon {
-  left: 0;
-  margin-top: -2px;
+#search {
+  color: #fff;
+  background-color: rgb(136,136,136);
 }
 #search_close {
   margin-top: 8px;
@@ -183,7 +188,6 @@ nav .brand-logo {
     top: 100px;
   }
 }
-
 /* COLORS */
 a{
   color: #fff

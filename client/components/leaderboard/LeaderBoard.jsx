@@ -52,9 +52,9 @@ class LeaderBoard extends React.Component {
     });
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return nextState !== this.state;
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   return nextState !== this.state;
+  // }
 
   render() {
     return(
