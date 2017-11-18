@@ -121,6 +121,12 @@
   margin: auto;
 }
 
+@media only screen and (max-width: 992px) {
+  .myRank {
+    width: 85%;
+  }
+}
+
 .profile_summary {
   display: flex;
   flex-flow: column;
