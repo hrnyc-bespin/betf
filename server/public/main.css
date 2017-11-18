@@ -58,6 +58,11 @@ nav .brand-logo {
   clear: both;
   margin: auto;
 }
+@media only screen and (max-width: 992px) {
+  .game-list {
+    width: 85%;
+  }
+}
 .gametitle {
   text-align: center;
 }
